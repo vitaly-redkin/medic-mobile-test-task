@@ -1,0 +1,20 @@
+{
+  "name": "summer",
+  "version": "1.0.0",
+  "description": "Medic Mobile take-home test",
+  "main": "bin/index.js",
+  "bin": {
+    "summer": "./bin/index.js"
+  },
+  "scripts": {
+    "summer2": "index.js",
+    "test": "test.js"
+  },
+  "author": "Vitaly Redkin",
+  "license": "MIT",
+  "dependencies": {
+    "csv-parse": "^4.8.8",
+    "csv-stringify": "^5.3.6",
+    "lodash": "^4.17.15"
+  }
+}
