@@ -1,9 +1,14 @@
 This project is a Medic Mobile Take Home Test (https://gist.github.com/SCdF/40e8d5eed974ef6863ea0020054d81f9).
 
+## Preparations
+I have developed this application on Mac with NodeJS installed with Homebrew and added to PATH. So you may need to edit the very first ("shebang") line of the `bin/index.js` file to replace the `#!node` with more traditional `!/usr/bin/env node`.
+
 ## Installation
-To install the script as a "global" Node.JS utility run such command
+To install the script as a "global" NodeJS utility run such command
 
 `npm install -g`
+
+** Note: for some unexplicable reasons sometimes you need to run this command twice.
 
 ## Running
 To run an utility you should use the command line command named `summer` with input and output stream redirection:
