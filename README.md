@@ -20,17 +20,17 @@ To run unit tests use -t command line switch:
 
 `summer -t`
 
-Unit tests described in the `tests` array of the `tests.js` file. Every eleemnt in this array is, in turn, another array which consists of the names of the input file, the expected output file in the "normal" mode and the expected output file in the "advanced" mode.
+Unit tests described in the `tests` array of the `tests.js` file. Every element in this array is, in turn, another array which consists of the names of the input file, the expected output file in the "normal" mode and the expected output file in the "advanced" mode.
 
 The test files should be in the `test-data` folder. I did not use any test framework since it would be an overkill for such a simple app.
 
 ## Source Data Validation
-csv-parseNPM package I used does some job do validate the CSV file format correctness - like proper quoting and consisten number of columns. If the parsing fails I stop the processing, print message to stderr and return 1 as an exist code.
+csv-parse NPM package I used does some validation the CSV file format correctness - like proper quoting and consistent number of columns. If the parsing fails I stop the processing, print message to stderr and return 1 as an exist code.
 Also I validate if both names are non-empty in the row and if the amount is a positive number. If at least one row fails this validation I do not process the file at all and print the error description and the first 10 failed rows.
 
 ## Used NPM Packages
 * commander - helps with the command line parsing
-* csv-parse, csc-stringify - parses adn composed the CSV files
+* csv-parse, csc-stringify - parses and composed the CSV files
 * lodash - used for the "group by" functionality
 
 While I can implement the functionality I used from thsi packages in this simple application myself I decided to use them since it what I do in the real life (I am paid to solve the business problems not to reinvent the wheels)
