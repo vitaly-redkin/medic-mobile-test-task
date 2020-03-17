@@ -6,10 +6,6 @@
   "bin": {
     "summer": "./bin/index.js"
   },
-  "scripts": {
-    "summer2": "index.js",
-    "test": "test.js"
-  },
   "author": "Vitaly Redkin",
   "license": "MIT",
   "dependencies": {

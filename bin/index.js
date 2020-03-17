@@ -23,13 +23,13 @@ function main() {
     commander
         .version('1.0.0', '-v, --version')
         .usage('[OPTIONS]...')
-        .option('-a, --turnarounds', 'Aggregate turnarounds like "A,B,100" and "B,A,10" to "A,B,90"')
+        .option('-a, --advanced', 'Aggregate turnarounds like "A,B,100" and "B,A,10" to "A,B,90"')
         .option('-t, --test', 'Run tests')
         .parse(process.argv);
     const optionDefinitions = [
         { name: 'deep', alias: 'd', type: Boolean },
     ];
-    const removeTurnarounds = commander.turnarounds;
+    const removeTurnarounds = commander.advanced;
     const test = commander.test;
 
     if (test) {

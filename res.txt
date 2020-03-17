@@ -1,4 +1,0 @@
-Alex,Beatrice,114.8
-Beatrice,Carl,142.78
-Carl,Alex,60.88
-

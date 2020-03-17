@@ -48,7 +48,7 @@ module.exports = {
       error = validateInput(
           records, 
           'invalid amount',
-          row => isNaN(parseFloat(row[2])) || parseFloat(row[2]) < 0
+          row => isNaN(parseFloat(row[2])) || parseFloat(row[2]) <= 0
       );
       if (error) {
           return error;
